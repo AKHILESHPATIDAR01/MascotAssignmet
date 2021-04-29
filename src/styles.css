@@ -1,4 +1,49 @@
+* {
+  box-sizing: border-box;
+}
 .App {
   font-family: sans-serif;
   text-align: center;
+}
+
+.slider {
+  width: 90%;
+  height: 500px;
+  margin: 20px auto;
+  border: 2px solid salmon;
+  position: relative;
+}
+
+.text-area {
+  width: 30%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  text-align: center;
+  padding-top: 250px;
+  font-size: 40px;
+  color: rgb(92, 91, 91);
+}
+
+.arrow-area {
+  position: absolute;
+  bottom: 0px;
+  right: 100px;
+}
+
+img {
+  width: 100%;
+  height: 500px;
+}
+
+@media screen and (max-width: 900px) {
+  .text-area {
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    bottom: 10;
+    font-size: 40px;
+    color: #fff;
+    border: 1px solid saddlebrown;
+  }
 }
